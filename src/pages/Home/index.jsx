@@ -2,7 +2,10 @@
 import { Container, Brand, Menu, Search, Content, NewNote } from "./style";
 import { Header } from "../../components/Header";
 import { ButtonText } from "../../components/ButtonText";
-import { Input } from "../../components/input";
+import { Input } from "../../components/Input";
+import { Section } from "../../components/Section";
+import { Tag } from '../../components/Tag';
+import { Note } from "../../components/Note";
 import {FiPlus} from "react-icons/fi";
 export function Home() {
     return (
@@ -33,7 +36,25 @@ export function Home() {
             </Search>
 
             <Content>
-            
+                <Section title="Minhas notas"/>
+
+                <Note data={{
+                    title: 'React Modal', 
+                    tags: [
+                        {id: '1', name:'react'},
+                        {id: '2', name:'node'},
+                    ]
+                    }}
+                    />
+
+                <Note data={{
+                    title: 'Exemplo de Middleware', 
+                    tags: [
+                        {id: '1', name:'express'},
+                        {id: '2', name:'node'},
+                    ]
+                    }}
+                    />                
             </Content>
 
             <NewNote>

@@ -65,6 +65,9 @@ export const Content = styled.div `
 
     grid-area: content;
 
+    padding: 0 64px;
+    overflow-y: auto;
+
 `
 export const NewNote = styled.button `
 
@@ -76,4 +79,6 @@ export const NewNote = styled.button `
     font-size: 20px;
     gap: 8px;
     background-color: ${({theme}) => theme.COLORS.ORANGE};
+
+    
 `
