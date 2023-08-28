@@ -4,9 +4,8 @@ import { Header } from "../../components/Header";
 import { ButtonText } from "../../components/ButtonText";
 import { Input } from "../../components/Input";
 import { Section } from "../../components/Section";
-import { Tag } from '../../components/Tag';
 import { Note } from "../../components/Note";
-import {FiPlus} from "react-icons/fi";
+import { FiPlus } from "react-icons/fi";
 export function Home() {
     return (
         <Container>
@@ -57,7 +56,7 @@ export function Home() {
                     />                
             </Content>
 
-            <NewNote>
+            <NewNote to="/new">
                 <FiPlus/>
                 Criar Nota
             </NewNote>

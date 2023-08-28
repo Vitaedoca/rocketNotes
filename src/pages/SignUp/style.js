@@ -42,7 +42,7 @@ export const Form = styled.form`
     }
 
     > a {
-        color: ${({theme}) => theme.COLORS.ORANGE};
+        color: ${({theme}) => theme.COLORS.ORANGE}
     }
 `;
 
